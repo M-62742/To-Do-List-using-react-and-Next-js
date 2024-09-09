@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.heading{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.todo-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0; 
+}
+
+
+
+
+form {
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px; 
+}
+
+.todo-item {
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+  padding: 10px; 
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.3s ease; 
+  border-radius: 4px; 
+  background-color: #f9f9f9; }
+
+.todo-item:last-child {
+  border-bottom: none; }
+
+.todo-item:hover {
+  background-color: #f0f8ff;
+}
+
+
+.todo-checkbox {
+  cursor: pointer; 
+}
+
+.input {
+  flex: 1;
+  width: 444px;
+  padding: 8px;
+  border: 1px solid #dcdcdc; 
+  border-radius: 4px;
+  font-size: 1em; 
+}
+
+.todo-button {
+  padding: 10px 20px; 
+  background-color: #080808; 
+  color: #ffffff;
+  border: none;
+  border-radius: 4px; 
+  font-size: 1em; 
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+}
+
+.todo-button:hover {
+  background-color:transparent;
+  color: black;
+  border: 1px solid black;
+  font-weight: 500;
+  border-radius: 10px; 
+}
+
+.bg-zinc {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px; 
+}
+
+ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+li {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.3s ease;
+  border-radius: 4px; 
+  background-color: #ffffff; 
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background-color: #f0f8ff; 
+}
+
+button {
+  background: transparent; 
+  font-style: bold;
+  border:1px solid red;
+  border-radius: 5px; 
+  color: #ff4d4d;
+  padding: 10px;
+  cursor: pointer; 
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: red;
+}
+@media (max-width: 480px) {
+  .todo-header {
+      font-size: 1.2em;
+  }
+  .heading{
+    width: 100%;
+    margin: 0;
+  }
+
+  .input {
+      font-size: 0.9em;
+      width: 200px;
+  }
+
+  .todo-button {
+      font-size: 0.9em; 
+      padding: 2px;
+  }
+}
